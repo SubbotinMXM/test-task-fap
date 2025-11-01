@@ -22,7 +22,7 @@ public class Tests extends TestBase {
     void registrationNegativeTest(@RandomUser UserData userData) {
         open(getConfig().baseUrl(), RegistrationPage.class)
                 .setRegistrationDataAndSubmit(userData.getFirstName(), userData.getEmail(), userData.getPassword())
-                .switchToBusinessAccount()
+                .privateBusinessAccountSwitchElement.switchToBusinessAccount()
                 .fillRequiredDataAndSubmit()
                 .agreeWithTermsAndSubmit()
                 .finishRegistration();
@@ -34,7 +34,7 @@ public class Tests extends TestBase {
     void registrationPositiveTest(@RandomUser UserData userData) {
         open(getConfig().baseUrl(), RegistrationPage.class)
                 .setRegistrationDataAndSubmit(userData.getFirstName(), userData.getEmail(), userData.getPassword())
-                .switchToBusinessAccount()
+                .privateBusinessAccountSwitchElement.switchToBusinessAccount()
                 .fillRequiredDataAndSubmit()
                 .agreeWithTermsAndSubmit()
                 .uploadRequiredDocuments()
