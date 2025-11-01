@@ -13,7 +13,7 @@ public class FinishRegistrationPrivateAccountVerificationPage {
 
     @Step("Переключение на тип аккаунта 'Бизнес'")
     public FinishRegistrationBusinessAccountDescriptionPage switchToBusinessAccount(){
-        Selenide.sleep(7000);
+        Selenide.sleep(10_000);
         businessAccountTypeBtn.click();
         return new FinishRegistrationBusinessAccountDescriptionPage();
     }
