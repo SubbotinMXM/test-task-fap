@@ -1,7 +1,6 @@
 package pages;
 
 import com.codeborne.selenide.Condition;
-import com.codeborne.selenide.Selenide;
 import com.codeborne.selenide.SelenideElement;
 import io.qameta.allure.Step;
 
@@ -9,7 +8,7 @@ import static com.codeborne.selenide.Selenide.$x;
 
 public class FinishRegistrationBusinessAccountAgreementPage {
 
-    SelenideElement
+    private final SelenideElement
             agreementCheckbox = $x("//*[@data-testid='field-element-contractSigned']"),
             submitBtn = $x("//*[@type='submit']");
 

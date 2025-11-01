@@ -9,9 +9,8 @@ import static com.codeborne.selenide.Selenide.$$x;
 import static com.codeborne.selenide.Selenide.$x;
 
 public class FinishRegistrationBusinessAccountDescriptionPage {
-    Faker faker = new Faker();
-
-    SelenideElement
+    private final Faker faker = new Faker();
+    private final  SelenideElement
             producerNameInput = $x("//*[@data-testid='field-element-producerName']"),
             contactFirstnameInput = $x("//*[@data-testid='field-element-contactFirstname']"),
             contactLastnameInput = $x("//*[@data-testid='field-element-contactLastname']"),

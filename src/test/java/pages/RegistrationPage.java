@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selenide.$x;
 
 public class RegistrationPage {
 
-    SelenideElement
+    private final SelenideElement
             header = $x("//*[@class='landing-main__title']"),
             usernameInput = $x("//input[@name='username']"),
             emailInput = $x("//input[@name='email']"),

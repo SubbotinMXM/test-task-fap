@@ -7,7 +7,7 @@ import static com.codeborne.selenide.Selenide.$x;
 
 public class FinalRegistrationAgreementModal {
 
-    SelenideElement refuseBtn = $x("//*[@data-testid='affidavit-modal__cancel']");
+    private final SelenideElement refuseBtn = $x("//*[@data-testid='affidavit-modal__cancel']");
 
     @Step("Клик на 'Отказаться и удалить мой контент'")
     public RefuseAndDeleteContentModal refuseAndDeleteContent(){

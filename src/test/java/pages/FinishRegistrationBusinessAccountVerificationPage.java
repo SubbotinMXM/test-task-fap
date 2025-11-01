@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.$x;
 
 public class FinishRegistrationBusinessAccountVerificationPage {
 
-    SelenideElement
+    private final SelenideElement
             passportFirstPageUploadInput = $x("//input[@id='field-element-passport']"),
             commercialRegisterExtractUploadInput = $x("//input[@id='field-element-commercialRegisterExtract']"),
             certificateOfIncorporationUploadInput = $x("//input[@id='field-element-certificateOfIncorporation']"),

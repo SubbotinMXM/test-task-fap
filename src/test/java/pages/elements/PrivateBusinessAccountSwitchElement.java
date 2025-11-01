@@ -9,7 +9,7 @@ import static com.codeborne.selenide.Selenide.$x;
 
 public class PrivateBusinessAccountSwitchElement {
 
-    SelenideElement
+    private final SelenideElement
             businessAccountTypeBtn = $x("//*[text()='Бизнес']");
 
     @Step("Переключение на тип аккаунта 'Бизнес'")
